@@ -10,6 +10,9 @@
 - `generateRandomArray` 生成一个限定区间的随机数组
 
 
+## 参考资料
+- [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/articles/7674659.html)
+
 ## LICENSE
 
 ![](LICENSE.png)
