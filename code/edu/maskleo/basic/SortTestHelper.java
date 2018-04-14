@@ -21,4 +21,19 @@ public final class SortTestHelper {
         return arr;
     }
 
+    /**
+     * @param n   数组的大小
+     * @param max 随机数的最大值
+     * @return
+     */
+    public static int[] generateRandomArray(int n, int max) {
+        assert n > 0;
+        Random r = new Random();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = r.nextInt(max + 1);
+        }
+        return arr;
+    }
+
 }
