@@ -9,7 +9,7 @@ import static edu.maskleo.basic.SortTestHelper.print;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] array = generateRandomArray(10000, 50000);
+        int[] array = generateRandomArray(100000, 5000);
         print(array);
         long start = System.currentTimeMillis();
         int lastIndex = array.length - 1;
@@ -26,7 +26,7 @@ public class BubbleSort {
                 i = -1;
             }
         }
-        System.out.println("冒泡排序所需时间" + (System.currentTimeMillis() - start));
+        System.out.println("冒泡排序所需时间：" + (System.currentTimeMillis() - start));
         print(array);
     }
 }
