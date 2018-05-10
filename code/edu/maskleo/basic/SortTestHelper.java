@@ -36,4 +36,15 @@ public final class SortTestHelper {
         return arr;
     }
 
+    /**
+     * @param array
+     */
+    public static void print(int[] array) {
+        StringBuilder sb = new StringBuilder();
+        for (int t : array) {
+            sb.append(t).append(",");
+        }
+        System.out.println(sb);
+    }
+
 }
