@@ -4,6 +4,8 @@ import static edu.maskleo.basic.SortTestHelper.generateRandomArray;
 import static edu.maskleo.basic.SortTestHelper.print;
 
 /**
+ * 冒泡排序：排序思想是不断的比较相邻的两个数，如果左边的数大于右边的数则将他们交换位置
+ *
  * @author maskleo
  */
 public class BubbleSort {
@@ -20,7 +22,7 @@ public class BubbleSort {
                 array[i] = array[i + 1];
                 array[i + 1] = temp;
             }
-            //到了尾部，将数组末尾下标往前移一位，并从头开始遍历
+            //到了尾部，将数组末尾下标往前移一位，并从头开始遍历，之所以是-1是因为循环完成将会执行 i++
             if (i + 1 == lastIndex) {
                 lastIndex = i;
                 i = -1;
