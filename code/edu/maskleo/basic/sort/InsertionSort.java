@@ -12,8 +12,12 @@ public class InsertionSort {
         int[] array = generateRandomArray(100000, 5000);
         print(array);
         long start = System.currentTimeMillis();
+        int index = 0;
         for (int i = 0; i < array.length; i++) {
+            int min = array[index];
+            for (int j = min; j > 0; min--) {
 
+            }
         }
     }
 }
