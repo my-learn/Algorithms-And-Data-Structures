@@ -2,6 +2,7 @@ package edu.maskleo.basic.sort;
 
 import static edu.maskleo.basic.SortTestHelper.generateRandomArray;
 import static edu.maskleo.basic.SortTestHelper.print;
+import static edu.maskleo.basic.SortTestHelper.swap;
 
 /**
  * 选择排序：找到第一个最小的放在前面，然后找到第二个最小的放在第二位，找到第三个最小的以此类推
@@ -24,9 +25,7 @@ public class SelectionSort {
             }
             // 找到了最小值, 将值调换位置
             if (i + 1 == length) {
-                int t = array[sortIndex];
-                array[sortIndex] = array[minIndex];
-                array[minIndex] = t;
+                swap(array, sortIndex, minIndex);
                 // 开始查找的下标 +1
                 sortIndex++;
                 // 默认的最小值为查找时的第一个值

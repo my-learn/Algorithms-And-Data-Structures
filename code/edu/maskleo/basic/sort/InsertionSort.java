@@ -1,6 +1,7 @@
 package edu.maskleo.basic.sort;
 
 import static edu.maskleo.basic.SortTestHelper.generateRandomArray;
+import static edu.maskleo.basic.SortTestHelper.swap;
 import static edu.maskleo.basic.SortTestHelper.print;
 
 /**
@@ -16,9 +17,7 @@ public class InsertionSort {
         for (int i = 1; i < array.length; i++) {
             // 这里代码优化了，判断与前面一个数比较大小，如果大于等于前面的数就不用继续往前面比较了
             for (int j = i; j > 0 && array[j] < array[j - 1]; j--) {
-                int t = array[j];
-                array[j] = array[j - 1];
-                array[j - 1] = t;
+                swap(array, j, j - 1);
             }
         }
         System.out.println("插入排序所需时间：" + (System.currentTimeMillis() - start));
