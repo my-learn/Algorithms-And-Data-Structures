@@ -12,19 +12,21 @@ import static edu.maskleo.basic.SortTestHelper.swap;
 public class BubbleSort {
 
     public static void main(String[] args) {
-        int[] array = generateRandomArray(100000, 5000);
+        int[] array = generateRandomArray(500000, 5000);
         print(array);
         long start = System.currentTimeMillis();
-        int lastIndex = array.length - 1;
-        for (int i = 0; i <= lastIndex; i++) {
+        int sortIndex = array.length - 1;
+        for (int i = 0; i <= sortIndex; ) {
             //前后比较,将较大的数与较小的数交换
             if (array[i] > array[i + 1]) {
                 swap(array, i, i + 1);
             }
-            //到了尾部，将数组末尾下标往前移一位，并从头开始遍历，之所以是-1是因为循环完成将会执行 i++
-            if (i + 1 == lastIndex) {
-                lastIndex = i;
-                i = -1;
+            //到了尾部，将数组末尾下标往前移一位，并从头开始遍历
+            if (i + 1 == sortIndex) {
+                sortIndex = i;
+                i = 0;
+            } else {
+                i++;
             }
         }
         System.out.println("冒泡排序所需时间：" + (System.currentTimeMillis() - start));
