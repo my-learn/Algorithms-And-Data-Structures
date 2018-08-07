@@ -30,6 +30,15 @@
 
 - [代码实现](code/edu/maskleo/basic/sort/SelectionSort.java)
 
+### 归并排序
+
+- 通俗理解: 拆分成小段然后每一个小段进行排序, 类似二叉树的中序遍历
+
+![](static/merge-sort.gif)
+
+- [代码实现](code/edu/maskleo/basic/sort/MergeSort.java)
+
+
 ## 参考资料
 - [十大经典排序算法（动图演示）](https://www.cnblogs.com/onepixel/articles/7674659.html)
 
