@@ -30,6 +30,16 @@
 
 - [代码实现](code/edu/maskleo/basic/sort/SelectionSort.java)
 
+### 冒泡排序
+
+- 通俗理解：排序思想是不断的比较相邻的两个数，如果左边的数大于右边的数则将他们交换位置
+
+- 动图如下
+
+![](static/bubble-sort.gif)
+
+- [代码实现](code/edu/maskleo/basic/sort/BubbleSort.java)
+
 ### 归并排序
 
 - 通俗理解: 拆分成小段然后每一个小段进行排序, 类似二叉树的中序遍历
